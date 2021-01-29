@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"   />
+    <title>Page title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Inicio</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">Sobre</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>LUCAS SANTOS</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(imagens/portfolio1.jpg);"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="imagens/logos-st/codeclub-logo.png" alt="">
+                        </div>
+
+
+                        <div class="subtitle">
+                            Uma rede mundial de clubes de programação para crianças.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(imagens/portfolio2.jpg);"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="imagens/logos-st/cursologo1.png" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            Cursos de Tecnologia gratuitos e de qualidade.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(imagens/portfolio3.jpg);"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="imagens/logos-st/gitlogo3.png" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            Git Hub aprenda compartilhe ou participe de projetos de programação.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(imagens/portfolio4.jpg);"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="imagens/logos-st/freecodelogo4.png" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            Uma fonte rica de informação e conhecimento sobre programação.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(imagens/portfolio5.jpg);"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="imagens/logos-st/anjunalogo.png" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            Anjuna uma marca global de turismo para eventos de música.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(imagens/portfolio6.jpg);"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="imagens/logos-st/udemylogo2.png" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            Plataforma E-Learning para profissionais e para alunos.
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+    portfolioItem.addEventListener('mouseout', () => {
+        portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>
